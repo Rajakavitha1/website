@@ -41,7 +41,7 @@ You can generate the following resources in `kubectl run`using `--generator` fla
 * CronJob - use `batch/v1beta1`and for an endpoint - use `cronjob/v1beta1`(default).
 * CronJob - use`batch/v2alpha1` and for an endpoint - use `cronjob/v2alpha1` (deprecated).
 
-If you do not specify a generator flag, other flags prompts you to use a specific generator. The following table lists the flags that force you to use specific generators, depending on the version of the cluster:
+If you do not specify a generator flag, other flags prompt you to use a specific generator. The following table lists the flags that force you to use specific generators, depending on the version of the cluster:
 
 |   Generated Resource   | Cluster v1.4 and later | Cluster v1.3          | Cluster v1.2                               | Cluster v1.1 and earlier                   |
 |:----------------------:|------------------------|-----------------------|--------------------------------------------|--------------------------------------------|
@@ -51,7 +51,7 @@ If you do not specify a generator flag, other flags prompts you to use a specifi
 | Job                    | `--restart=OnFailure`  | `--restart=OnFailure` | `--restart=OnFailure` OR `--restart=Never` | N/A                                        |
 | Cron Job               | `--schedule=<cron>`    | N/A                   | N/A                                        | N/A                                        |
 
-{:.note} These flags use a default generator only when you have not specified
+**Note** These flags use a default generator only when you have not specified
 any flag.  This means that when you combine `--generator` with other flags the generator that you specified later does not change. For example, in a cluster v1.4, if you initially specify
 `--restart=Always`, a Deployment is created; if you later specify `--restart=Always`
 and `--generator=run/v1`, a Replication Controller is created.
