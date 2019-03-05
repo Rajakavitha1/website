@@ -33,7 +33,7 @@ kubectl create -f https://k8s.io/examples/application/nginx-with-request.yaml
 deployment.apps/nginx-deployment created
 ```
 
-Check pod status by following command:
+Check pod status by following command: 
 
 ```shell
 kubectl get pods
