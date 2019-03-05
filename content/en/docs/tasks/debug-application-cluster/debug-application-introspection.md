@@ -93,6 +93,7 @@ Volumes:
     Type:	Secret (a volume populated by a Secret)
     SecretName:	default-token-4bcbi
     Optional:   false
+    
 QoS Class:      Guaranteed
 Node-Selectors: <none>
 Tolerations:    <none>
