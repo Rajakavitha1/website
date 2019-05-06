@@ -1,13 +1,10 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
 reviewers:
-- tengqm
-- zhangxiaoyu-zidif
-- xiangpengzhao
-- bradtopol
+- sig-docs-en-reviews # Defined in OWNERS_ALIASES
+
 approvers:
-- heckj
-- a-mccarthy
-- abiogenesis-now
-- bradamant3
-- steveperry-53
-- zacharysarah
-- chenopis
+- sig-docs-en-owners # Defined in OWNERS_ALIASES
+
+labels:
+- sig/docs
